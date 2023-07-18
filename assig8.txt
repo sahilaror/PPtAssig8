@@ -1,0 +1,37 @@
+ANS 1
+	Hibernate is an open source object relational mapping (ORM) tool that provides a framework to map object-oriented domain models to relational databases for web applications. Object relational mapping is based on the containerization of objects and the abstraction that provides that capacity.
+
+ANS 2	
+	From a developer's perspective, the key benefit of Hibernate over JDBC is the fact that developers can code their Java applications based on object-oriented principles and best practices without worrying about database semantics
+
+ANS 3
+	1. Session Interface : The basic interface for all hibernate applications. The instances are light weighted and can be created and destroyed without expensive process.
+
+2. SessionFactory interface : The delivery of session objects to hibernate applications is done by this interface. For the whole application, there will be generally one SessionFactory and can be shared by all the application threads.
+
+3. Configuration Interface : Hibernate bootstrap action is configured by this interface. The location specification is specified by specific mapping documents, is done by the instance of this interface.
+
+4. Transaction Interface : This is an optional interface. This interface is used to abstract the code from a transaction that is implemented such as a JDBC / JTA transaction.
+
+5. Query and Criteria interface : The queries from the user are allowed by this interface apart from controlling the flow of the query execution.
+
+ANS 4
+	A Session is used to get a physical connection with a database. The Session object is lightweight and designed to be instantiated each time an interaction is needed with the database. Persistent objects are saved and retrieved through a Session object.
+
+ANS 5
+	SessionFactory: SessionFactory is an Interface which is present in org. hibernate package and it is used to create Session Object. It is immutable and thread-safe in nature.
+
+ANS 6	
+	Hibernate Query Language (HQL) is an object-oriented query language, similar to SQL, but instead of operating on tables and columns, HQL works with persistent objects and their properties. HQL queries are translated by Hibernate into conventional SQL queries, which in turns perform action on database
+
+ANS 7	
+	A many-to-many relationship occurs when multiple records in a table are associated with multiple records in another table. For example, a many-to-many relationship exists between customers and products: customers can purchase various products, and products can be purchased by many customers.
+
+ANS 8
+	Hibernate caching improves the performance of the application by pooling the object in the cache. It is useful when we have to fetch the same data multiple times. There are mainly two types of caching: First Level Cache, and. Second Level Cache.
+
+ANS 9
+	Unlike the first-level cache which is accessible only to the session that maintains it, Second-level Cache is accessible to all Sessions. This means if one Session loads an object, like Person with id=1 and the Second session also loads the same object, only one database call will be made.
+
+ANS 10
+	hibernate. cfg. xml file contains database related configurations and session related configurations. Database configuration includes jdbc connection url, DB user credentials, driver class and hibernate dialect.
